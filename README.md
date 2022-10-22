@@ -1,5 +1,5 @@
 # Hydrogen_Patent_Analysis
 ## required modules
-pandas
-playwright
+pandas  
+playwright  
 openpyxl
