@@ -3,6 +3,9 @@
 pandas  
 playwright  
 openpyxl
-## Data excel format
+## Input data excel format
 |link|patent number|
 |---|---|
+## Output data format
+|patent number|link|backward|forward|
+|---|---|---|---|
