@@ -38,7 +38,14 @@ def run(playwright: Playwright, link) -> None:
     browser.close()
     return citb, citf
 
-xls = pd.read_excel('mod2.xlsx', engine = 'openpyxl') #open excel file with patent number and link 
+
+
+source_data = 'mod2.xlsx' #data from
+save_as = 'datav3.xlsx' #data to
+
+
+
+xls = pd.read_excel(source_data, engine = 'openpyxl') #open excel file with patent number and link 
 
 data = pd.DataFrame(columns = ['Pat_No', 'Link', 'Backward', 'Forward'])    #dataframe to save result
 link = "Empty"
@@ -64,4 +71,4 @@ for i in range(1305):
         print(link)
     print(i) #cycle through list in excel file
 
-data.to_excel('datav3.xlsx') #save dataframe as .xlsx
+data.to_excel(save_as) #save dataframe as .xlsx
