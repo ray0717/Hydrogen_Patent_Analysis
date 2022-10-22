@@ -1,5 +1,7 @@
 # Hydrogen_Patent_Analysis
-## required modules
+## Required modules
 pandas  
 playwright  
 openpyxl
+## Data excel format
+link  patent number
